@@ -9,7 +9,6 @@ updates:
       - "dependencies"
     commit-message:
       prefix: "deps"
-      include-scope: true
     pull-request-branch-name:
       separator: "-"
     versioning-strategy: "increase"
@@ -20,4 +19,3 @@ updates:
       - dependency-name: "react-dom"
         versions:
           - ">= 18.3.1"
-
