@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: "bundler"
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
@@ -12,10 +12,3 @@ updates:
     pull-request-branch-name:
       separator: "-"
     versioning-strategy: "increase"
-    ignore:
-      - dependency-name: "react"
-        versions:
-          - ">= 18.3.1"
-      - dependency-name: "react-dom"
-        versions:
-          - ">= 18.3.1"
