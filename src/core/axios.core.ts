@@ -3,12 +3,11 @@ import { AppConfig } from "./app.core";
 
 const axiosInstance: AxiosInstance = axios.create({
   baseURL: AppConfig.apiPrefix,
-  timeout: 60000,
+  timeout: 6000,
 });
 
 axiosInstance.interceptors.request.use(
   (config) => {
-    // Setup your config here
     return config;
   },
   (error) => {
@@ -19,7 +18,6 @@ axiosInstance.interceptors.request.use(
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
-    // Setup your config here
     return Promise.reject(error);
   }
 );
