@@ -1,0 +1,29 @@
+{
+  "global": {
+    "field": {
+      "email": {
+        "title": "Email",
+        "placeholder": "mail@site.com",
+        "validation": {
+          "email": "Invalid format email",
+          "required": "Email is required"
+        }
+      },
+      "password": {
+        "title": "Password",
+        "placeholder": "password",
+        "validation": {
+          "required": "Password is required"
+        }
+      }
+    },
+    "page": {
+      "login": {
+        "title": "Login now!",
+        "description": "Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.",
+        "button": "Login",
+        "forgot_password": "Forgot password?"
+      }
+    }
+  }
+}
