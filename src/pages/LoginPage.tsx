@@ -8,18 +8,15 @@ export default function LoginPage() {
       formState: { errors },
     },
     onSubmit,
+    t,
   } = useLoginPage();
 
   return (
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
-          </p>
+          <h1 className="text-5xl font-bold">{t("page.login.title")}</h1>
+          <p className="py-6">{t("page.login.description")}</p>
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -27,28 +24,34 @@ export default function LoginPage() {
         >
           <div className="card-body">
             <fieldset className="fieldset">
-              <label className="fieldset-label">Email</label>
+              <label className="fieldset-label">{t("field.email.title")}</label>
               <input
                 type="email"
                 className="input validator"
-                placeholder="mail@site.com"
+                placeholder={t("field.email.placeholder")}
                 required
                 {...register("email")}
               />
               <div className="validator-hint">{errors.email?.message}</div>
-              <label className="fieldset-label">Password</label>
+              <label className="fieldset-label">
+                {t("field.password.title")}
+              </label>
               <input
                 type="password"
                 className="input validator"
-                placeholder="Password"
+                placeholder={t("field.password.placeholder")}
                 required
                 {...register("password")}
               />
               <div className="validator-hint">{errors.password?.message}</div>
               <div>
-                <a className="link link-hover">Forgot password?</a>
+                <a className="link link-hover">
+                  {t("page.login.forgot_password")}
+                </a>
               </div>
-              <button className="btn btn-neutral mt-4">Login</button>
+              <button className="btn btn-neutral mt-4">
+                {t("page.login.button")}
+              </button>
             </fieldset>
           </div>
         </form>
