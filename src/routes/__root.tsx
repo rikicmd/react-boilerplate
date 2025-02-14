@@ -24,7 +24,7 @@ const queryClient = new QueryClient({
 
 export const Route = createRootRoute({
   component: () => {
-    const { t, i18n } = useTranslation("global");
+    const { i18n } = useTranslation("global");
     return (
       <QueryClientProvider client={queryClient}>
         <header className="absolute w-full">
