@@ -15,7 +15,7 @@
     "@hookform/resolvers": "^4.0.0",
     "@tailwindcss/vite": "^4.0.6",
     "@tanstack/react-query": "^5.66.0",
-    "@tanstack/react-query-devtools": "^5.66.0",
+    "@tanstack/react-query-devtools": "^5.66.7",
     "@tanstack/react-router": "^1.99.8",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.2.0",
