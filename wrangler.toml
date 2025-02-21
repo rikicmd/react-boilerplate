@@ -11,3 +11,6 @@ cwd = "."
 [site]
 bucket = "./dist"
 entry-point = "dist/index.js"
+
+[pages]
+build_output_dir = "dist"
