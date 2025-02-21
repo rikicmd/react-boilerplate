@@ -1,14 +1,7 @@
 name = "react-boilerplate"
 type = "javascript"
-account_id = "a006210735df7be4ba5248151c8eb1e9"
-workers_dev = true
 compatibility_date = "2025-02-21"
 pages_build_output_dir = "dist"
 
-[build]
 command = "bun install && bun run build"
 cwd = "."
-
-[site]
-bucket = "./dist"
-entry-point = "dist/index.js"
