@@ -1,0 +1,8 @@
+name = "react-boilerplate"
+type = "javascript"
+workers_dev = true
+compatibility_date = "2025-02-21"
+
+[build]
+command = "bun install && bun run build"
+cwd = "."
