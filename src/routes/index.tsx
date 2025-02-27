@@ -1,6 +1,5 @@
 import { MainPage } from "@/pages";
 import { createFileRoute } from "@tanstack/react-router";
-import { Helmet } from "react-helmet";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -9,9 +8,9 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <>
-      <Helmet>
+      <head>
         <title>My Template React Boilerplate</title>
-      </Helmet>
+      </head>
       <MainPage />
     </>
   );

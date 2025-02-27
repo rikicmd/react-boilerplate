@@ -1,6 +1,5 @@
-import { LoginPage } from "@/pages";
+import LoginScreen from "@/internal/login/screen/LoginScreen";
 import { createFileRoute } from "@tanstack/react-router";
-import { Helmet } from "react-helmet";
 
 export const Route = createFileRoute("/login")({
   component: RouteComponent,
@@ -9,10 +8,10 @@ export const Route = createFileRoute("/login")({
 function RouteComponent() {
   return (
     <>
-      <Helmet>
+      <head>
         <title>Login</title>
-      </Helmet>
-      <LoginPage />
+      </head>
+      <LoginScreen />
     </>
   );
 }
